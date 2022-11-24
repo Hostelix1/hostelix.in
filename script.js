@@ -26,6 +26,7 @@ function sendMail() {
       // document.getElementById("phone").value = NaN;
       document.getElementById("Form").reset();
       alert("Your message sent successfully!!");
+    
     })
     .catch((err) => console.log(err));
 }
