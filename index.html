@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hostelix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <div class="home-box">
+        <!-- navbar -->
+        <nav>
+            <div class="nav-container main-nav flex">
+                <a href="index.html" class="company-name"> HOSTELIX </a>
+                <div class="nav-links" id="nav-links">
+                    <ul class="flex">
+                        <li>
+                            <a href="index.html" class="hover-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="team.html" class="hover-link">Team</a>
+                        </li>
+                        <li><a href="contact.html" class="hover-link">Contact</a></li>
+                        <li>
+                            <div class="tools-dropdown">
+                                <button class="dropdown-button" id="dropdown-button"
+                                    onclick="showTools()">Tools</button>
+                                <div class="tools-list">
+                                    <a href="tools/stockTimeSeries.html">Stock Time Series</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                    <i class="bi bi-list" id="nav-toggle2"></i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- header-section -->
+        <header>
+            <div class="container header-section easeload">
+                <div class="header-top">
+                    <img draggable="false" src="./images/logo.png" class="header-top-image" alt="Hostelix logo" />
+                </div>
+                <div class="header-bottom">
+                    <h1>
+                        <span class="left-span">You Dream.</span>
+                        <span class="right-span">We Deliver.</span>
+                    </h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- HP working -->
+    <section class="works-section">
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300?text=illustration" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    At Hostelix we offer comprehensive financial planning and investment advising services that are
+                    tailored to our clients' specific needs.
+                </p>
+            </div>
+        </div>
+
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300?text=illustration" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    Our versed staff are focused on assisting you in extending your financial goals.
+                    We acknowledge that the financial environment may be perplexing and intimidating, but we think that
+                    everyone deserves access to adequate counsel and direction.
+                </p>
+            </div>
+        </div>
+
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300?text=illustration" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    We endeavor to give you a personalized experience that is specific to your individual requirements
+                    and circumstances. We further extend our assistance with your new and current investments.
+                </p>
+            </div>
+        </div>
+
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300?text=illustration" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    Our team is committed to offering the finest caliber of service, and we are effusive about assisting
+                    clients in achieving their financial goals. We believe in building long-term Engagement with our
+                    clients. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- stats-section -->
+
+    <section class="stats-section">
+        <div class="stats-container flex">
+            <div class="stats flex">
+                <div class="stat">
+                    <p><i class="bi bi-people"></i></p>
+                    <h3>50+</h3>
+                    <p>Clients</p>
+                </div>
+                <div class="stat">
+                    <p><i class="bi bi-geo-alt"></i></p>
+                    <h3>All over India</h3>
+                    <p>Places served</p>
+                </div>
+                <div class="stat">
+                    <p><i class="bi bi-stopwatch"></i></p>
+                    <h3>43,800</h3>
+                    <p>Hours worked</p>
+                </div>
+                <div class="stat">
+                    <p><i class="bi bi-check2-square"></i></p>
+                    <h3>123?</h3>
+                    <p>Tasks completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-response-section">
+        <h2 class="testimonial-header">Customer feedback</h2>
+        <div class="container flex testimonial-container">
+            <a class="prev" onclick="plusTestimonials(-1)">&#10094;</a>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Quisquam cum dolor voluptate obcaecati blanditiis,
+                    explicabo numquam natus dignissimos, aut soluta quam
+                    accusamus optio reiciendis incidunt unde eaque iusto
+                    ducimus id.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Corporis cumque asperiores, obcaecati neque, iste
+                    assumenda itaque deleniti nam autem id laboriosam.
+                    Reprehenderit quod vero molestiae.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Nostrum libero sapiente facere facilis at amet,
+                    excepturi, dolor voluptas nemo quaerat cupiditate,
+                    repellat reprehenderit repellendus laborum.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quisquam libero totam cupiditate et
+                    sit quibusdam debitis atque quia nemo porro.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quisquam libero totam cupiditate et
+                    sit quibusdam debitis atque quia nemo porro.
+                </p>
+            </div>
+            <a class="next" onclick="plusTestimonials(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentTestimonial(0)"></span>
+            <span class="dot" onclick="currentTestimonial(1)"></span>
+            <span class="dot" onclick="currentTestimonial(2)"></span>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="hover-link"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/hostelix_official/" class="hover-link"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" class="hover-link"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/hostelix-private-limited/" class="hover-link"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <div class="sub-footer">
+                <p>Created By Hostelix Tech Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // navbar tools dropdown
+        document.onclick = (e) => {
+            if (e.target.id !== 'dropdown-button') {
+                document.querySelector('.tools-list').classList.remove('tools-active');
+            }
+
+            // closing navbar when clicked outside
+            if (e.target.id !== 'nav-toggle2' && e.target.id !== 'dropdown-button') {
+                navLinks.classList.remove('active');
+            }
+        }
+
+        function showTools() {
+            document.querySelector('.tools-list').classList.toggle('tools-active');
+        }
+    </script>
+</body>
+
+</html>

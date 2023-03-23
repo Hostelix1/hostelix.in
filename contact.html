@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Hostelix</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-container main-nav flex">
+            <a href="index.html" class="company-name"> HOSTELIX </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="index.html" class="hover-link">Home</a></li>
+                    <li><a href="team.html" class="hover-link">Team</a></li>
+                    <li><a href="contact.html" class="hover-link">Contact</a></li>
+                    <li>
+                        <div class="tools-dropdown">
+                            <button class="dropdown-button" id="dropdown-button" onclick="showTools()">Tools</button>
+                            <div class="tools-list">
+                                <a href="tools/stockTimeSeries.html">Stock Time Series</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contact section -->
+    <section class="contact-section">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container contact-container flex">
+            <div class="contact-left">
+                <img src="https://via.placeholder.com/500x400?text=office" alt="Hostelix office" />
+            </div>
+            <div class="contact-right">
+                <p>Address: M D GOJNUR BUILDING, BESIDES CLARKS INN HOTEL, GADAG, KARNATAKA 582103 </p>
+                <p>Contact No: +91 9110805170</p>
+                <p>Mail id: <a href="#" class="hover-link">hostelixpvtltd@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- query section -->
+    <div class="query-section">
+        <div class="container query-container">
+            <div class="query-header">
+                <h2>Questions? We'd love to hear from you!</h2>
+            </div>
+            <div class="query-box">
+                <form action="" class="query-form flex">
+                    <div class="query-field">
+                        <input class="query-input" name="name" type="text" required>
+                        <label class="query-label" for="name">Name</label>
+                    </div>
+                    <div class="query-field">
+                        <input class="query-input" name="email" type="email" required>
+                        <label class="query-label" for="email">Email</label>
+                    </div>
+                    <div class="query-field">
+                        <input class="query-input" name="company" type="text" required>
+                        <label class="query-label" for="company">Company name</label>
+                    </div>
+                    <div class="query-field">
+                        <input class="query-input" name="mob_no" type="number" required>
+                        <label class="query-label" for="mob_no">Mobile No.</label>
+                    </div>
+                    <div class="query-field">
+                        <input class="query-input" name="question" type="text" required>
+                        <label class="query-label" for="question">How can we help?</label>
+                    </div>
+                    <div>
+                        <a type="submit" class="query-submit button-primary" href="">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="hover-link"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/hostelix_official/" class="hover-link"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" class="hover-link"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/hostelix-private-limited/" class="hover-link"><i class="bi bi-linkedin"></i></a>            </div>
+            <div class="sub-footer">
+                <p>Created By Hostelix Tech Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // navbar tools dropdown
+        document.onclick = (e) => {
+            if(e.target.id !== 'dropdown-button'){
+                document.querySelector('.tools-list').classList.remove('tools-active');
+            }
+        }
+        
+        function showTools() {
+            document.querySelector('.tools-list').classList.toggle('tools-active');
+        }
+    </script>
+</body>
+
+</html>
